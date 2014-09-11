@@ -11,6 +11,8 @@ module BlockCypher
 		let(:address_2) { 'mnTBb2Fd13pKwNjFQz9LVoy2bqmDugLM5m' }
 		let(:address_2_private_key) { '76a32c1e5b6f9e174719e7c1b555d6a55674fdc2fd99cfeee96a5de632775645' }
 
+		let(:token) { 'testtoken' }
+
 		describe '#transaction_new' do
 
 			it 'should call the txs/new api' do
@@ -43,6 +45,16 @@ module BlockCypher
         balance = api.address_final_balance(address_1)
         expect(balance).to be_kind_of Integer
         expect(balance).to be > 0
+      end
+
+    end
+
+    describe '#event_webhook_subscribe'  do
+
+      it 'should create a tx-confirmation hook ' do
+        hook_response = api.event_webhook_subscribe('http://requestb.in/yvrbljyv', 'tx-confirmation', token, address: 'mjU2XANrziNRB8T2vGPEvPRagY1uxwRzyT')
+        expect(hook_response['event']).to eq('tx-confirmation')
+        expect(hook_response['url']).to eq('http://requestb.in/yvrbljyv')
       end
 
     end

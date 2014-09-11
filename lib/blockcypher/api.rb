@@ -108,12 +108,12 @@ module BlockCypher
     # Events API
     ##################
 
-    def event_webhook_subscribe(url, filter, token = nil)
+    def event_webhook_subscribe(url, event, token = nil, params)
       payload = {
         url: url,
-        filter: filter,
+        event: event,
         token: token
-      }.to_json
+      }.merge(params).to_json
       api_http_post('/hooks', json_payload: payload)
     end
 
