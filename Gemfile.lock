@@ -1,0 +1,16 @@
+PATH
+  remote: .
+  specs:
+    blockcypher-ruby (0.1.0)
+      bitcoin-ruby (~> 0.0.5)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bitcoin-ruby (0.0.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  blockcypher-ruby!
