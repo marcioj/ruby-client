@@ -39,14 +39,14 @@ module BlockCypher
 
 		describe '#address_final_balance' do
 
-			it 'should get the balance of an address' do
-				balance = api.address_final_balance(address_1)
-				expect(balance).to be_kind_of Integer
-				expect(balance).to be > 0
-			end
+      it 'should get the balance of an address' do
+        balance = api.address_final_balance(address_1)
+        expect(balance).to be_kind_of Integer
+        expect(balance).to be > 0
+      end
 
-		end
+    end
 
-	end
+  end
 
 end
