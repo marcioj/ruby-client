@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'blockcypher-ruby'
   s.summary     = 'Blockcypher Ruby SDK'
-  s.version     = '0.1.1'
+  s.version     = '0.1.2'
   s.licenses    = ['Apache 2.0']
   s.description = "Ruby library to help you build your crypto application on BlockCypher"
   s.authors     = ["CoinHako", "BlockCypher"]
