@@ -7,7 +7,10 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.6)
     bitcoin-ruby (0.0.6)
+    crack (0.4.2)
+      safe_yaml (~> 1.0.0)
     diff-lcs (1.2.5)
     rspec (3.1.0)
       rspec-core (~> 3.1.0)
@@ -21,7 +24,11 @@ GEM
     rspec-mocks (3.1.0)
       rspec-support (~> 3.1.0)
     rspec-support (3.1.0)
+    safe_yaml (1.0.3)
     vcr (2.9.3)
+    webmock (1.18.0)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
 
 PLATFORMS
   ruby
@@ -30,3 +37,4 @@ DEPENDENCIES
   blockcypher-ruby!
   rspec (~> 3.1)
   vcr (~> 2.9.3)
+  webmock (~> 1.18)
