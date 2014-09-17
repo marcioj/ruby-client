@@ -11,4 +11,5 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency "bitcoin-ruby", ["~> 0.0.5"]
   s.add_development_dependency "rspec", ["~> 3.1"]
+  s.add_development_dependency "vcr", ["~> 2.9.3"]
 end

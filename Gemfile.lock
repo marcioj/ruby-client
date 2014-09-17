@@ -21,6 +21,7 @@ GEM
     rspec-mocks (3.1.0)
       rspec-support (~> 3.1.0)
     rspec-support (3.1.0)
+    vcr (2.9.3)
 
 PLATFORMS
   ruby
@@ -28,3 +29,4 @@ PLATFORMS
 DEPENDENCIES
   blockcypher-ruby!
   rspec (~> 3.1)
+  vcr (~> 2.9.3)
