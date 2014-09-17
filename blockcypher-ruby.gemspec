@@ -10,4 +10,5 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://www.blockcypher.com'
 
   s.add_runtime_dependency "bitcoin-ruby", ["~> 0.0.5"]
+  s.add_development_dependency "rspec", ["~> 3.1"]
 end
