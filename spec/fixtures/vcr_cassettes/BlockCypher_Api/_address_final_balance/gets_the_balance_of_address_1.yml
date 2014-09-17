@@ -1,0 +1,138 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.blockcypher.com/v1/btc/test3/addrs/n2JLznPZCUnLRmSLzr9UAE22psexCVdz8i
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.7.2.1
+      Date:
+      - Wed, 17 Sep 2014 20:20:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1279'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "address": "n2JLznPZCUnLRmSLzr9UAE22psexCVdz8i",
+          "balance": 10000000,
+          "unconfirmed_balance": 0,
+          "final_balance": 10000000,
+          "n_tx": 3,
+          "txrefs": [
+            {
+              "tx_hash": "c6cc5e33ea9b0647b75e2291f20f7c380b9842268f70332548b353c7899770b5",
+              "block_height": 279448,
+              "tx_input_n": 0,
+              "tx_output_n": -1,
+              "value": 10000000,
+              "spent": false,
+              "confirmations": 1060,
+              "confirmed": "2014-09-09T14:07:40Z",
+              "double_spend": false
+            },
+            {
+              "tx_hash": "6669ffbebaf32af7da8c58778c6f8cb95c4ec11435519192e3a908dd830da122",
+              "block_height": 278692,
+              "tx_input_n": -1,
+              "tx_output_n": 0,
+              "value": 10000000,
+              "spent": true,
+              "spent_by": "c6cc5e33ea9b0647b75e2291f20f7c380b9842268f70332548b353c7899770b5",
+              "confirmations": 1816,
+              "confirmed": "2014-09-03T16:29:00Z",
+              "double_spend": false
+            },
+            {
+              "tx_hash": "0df7704e885ed216ce9310e92d127ccbdefc9f1755b7e22b27a56034eedcc777",
+              "block_height": 278578,
+              "tx_input_n": -1,
+              "tx_output_n": 1,
+              "value": 10000000,
+              "spent": false,
+              "confirmations": 1930,
+              "confirmed": "2014-09-02T19:41:34Z",
+              "double_spend": false
+            }
+          ],
+          "tx_url": "https://api.blockcypher.com/v1/btc/test3/txs/"
+        }
+    http_version: 
+  recorded_at: Wed, 17 Sep 2014 20:20:50 GMT
+- request:
+    method: get
+    uri: https://api.blockcypher.com/v1/btc/test3/addrs/mxZUdSxjxFZvmVpo2NuLSQ1CZZonhns8w5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.7.2.1
+      Date:
+      - Wed, 17 Sep 2014 20:20:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '548'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "address": "mxZUdSxjxFZvmVpo2NuLSQ1CZZonhns8w5",
+          "balance": 12000000,
+          "unconfirmed_balance": 0,
+          "final_balance": 12000000,
+          "n_tx": 1,
+          "txrefs": [
+            {
+              "tx_hash": "aa41ac0a47f6f9ee0a97b1bac04912f082b8746a4ae0cddb31e9ff882acd80b5",
+              "block_height": 279350,
+              "tx_input_n": -1,
+              "tx_output_n": 0,
+              "value": 12000000,
+              "spent": false,
+              "confirmations": 1158,
+              "confirmed": "2014-09-08T23:28:48Z",
+              "double_spend": false
+            }
+          ],
+          "tx_url": "https://api.blockcypher.com/v1/btc/test3/txs/"
+        }
+    http_version: 
+  recorded_at: Wed, 17 Sep 2014 20:20:51 GMT
+recorded_with: VCR 2.9.3
