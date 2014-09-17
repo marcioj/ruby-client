@@ -11,7 +11,7 @@ module BlockCypher
   TEST_NET = 'test'
   TEST_NET_3 = 'test3'
 
-  class Api
+  class API
 
     class Error < RuntimeError ; end
 

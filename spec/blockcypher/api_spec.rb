@@ -1,6 +1,6 @@
-describe BlockCypher::Api, :vcr do
+describe BlockCypher::API, :vcr do
   subject do
-    BlockCypher::Api.new(currency: BlockCypher::BTC, network: BlockCypher::TEST_NET_3, version: BlockCypher::V1)
+    described_class.new(currency: BlockCypher::BTC, network: BlockCypher::TEST_NET_3, version: BlockCypher::V1)
   end
 
   let(:address_1) { "n2JLznPZCUnLRmSLzr9UAE22psexCVdz8i" }
